@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Simuladores Matemáticos Web</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🌡️ Desafio Simuladores Matemáticos Web</h1>
+        <p class="subtitulo">
+            Desarrollo de Simuladores Interactivos con Lógica Matemática
+        </p>
+
+        <!-- EJERCICIO 1 -->
+        <section class="card">
+            <h2>🔥 Simulador de Transferencia de Calor</h2>
+            <p>
+                Calcula la temperatura final usando la Ley de Enfriamiento.
+            </p>
+
+            <form id="formCalor">
+                <label for="temperaturaInicial">
+                    Temperatura Inicial (T0)
+                </label>
+                <input type="number" id="temperaturaInicial" value="120" required>
+
+                <label for="temperaturaEntorno">
+                    Temperatura del Entorno (Ts)
+                </label>
+                <input type="number" id="temperaturaEntorno" value="38" required>
+
+                <label for="constanteK">
+                    Constante (k)
+                </label>
+                <input type="number" step="0.01" id="constanteK" value="0.45" required>
+
+                <label for="tiempo">
+                    Tiempo en horas (t)
+                </label>
+                <input type="number" id="tiempo" value="3" required>
+
+                <button type="button" onclick="calcularTemperatura()">
+                    Calcular Temperatura
+                </button>
+            </form>
+
+            <div class="resultado" id="resultadoTemperatura">
+                El resultado aparecerá aquí
+            </div>
+        </section>
+
+        <!-- EJERCICIO 2 -->
+        <section class="card">
+            <h2>🎲 Combinaciones Complejas</h2>
+            <p>
+                Calcula combinaciones usando factorial.
+            </p>
+
+            <form id="formCombinaciones">
+
+                <h3>Grupo 1</h3>
+
+                <label for="n1">n1</label>
+                <input type="number" id="n1" value="59" required>
+
+                <label for="r1">r1</label>
+                <input type="number" id="r1" value="5" required>
+
+                <h3>Grupo 2</h3>
+
+                <label for="n2">n2</label>
+                <input type="number" id="n2" value="35" required>
+
+                <label for="r2">r2</label>
+                <input type="number" id="r2" value="1" required>
+
+                <button type="button" onclick="calcularCombinaciones()">
+                    Calcular Combinaciones
+                </button>
+            </form>
+
+            <div class="resultado" id="resultadoCombinaciones">
+                El resultado aparecerá aquí
+            </div>
+        </section>
+    </div>
+
+    <script src="/Java/script.js"></script>
+</body>
+
+</html>
